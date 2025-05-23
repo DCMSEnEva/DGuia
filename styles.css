@@ -1,0 +1,110 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background: #f4f7f9;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  background: linear-gradient(45deg, #007BFF, #17a2b8);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section {
+  background: white;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card button {
+  width: 100%;
+  padding: 10px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card .content {
+  display: none;
+  padding: 15px;
+  background: #f9f9f9;
+}
+
+#glossary-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.glossary-term {
+  background: #e9f0ff;
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 4px solid #007BFF;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #666;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
